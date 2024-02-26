@@ -15,3 +15,7 @@ const fun3 = <Type>(val: Type): Type => {
 }
 
 fun3(["hi", 12, {}, null])
+
+const fun4 = <T>(val: T): T => {
+    return val
+}
