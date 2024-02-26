@@ -19,3 +19,26 @@ fun3(["hi", 12, {}, null])
 const fun4 = <T>(val: T): T => {
     return val
 }
+
+interface User {
+    email: string,
+    password: string,
+    age: number,
+}
+
+const users: Array<User> = [
+    {
+        email: "string",
+        password: "string",
+        age: 24,
+    },
+    {
+        email: "string",
+        password: "string",
+        age: 24,
+    }
+]
+
+function getUsers<User>(val: Array<User>): User {
+    return val[0]
+}
